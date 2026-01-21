@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: #0b0b0f;
+    color: #ffffff;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-dot {
+    color: #7a3cff;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    border: 1px solid #7a3cff;
+}
+
+.search-btn {
+    background: #7a3cff;
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #6b1e2e;
+}
+
+/* NAVIGATION LINKS */
+.nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #7a3cff;
+}
+
+/* SOCIAL SIDEBAR */
+.social-sidebar {
+    position: fixed;
+    left: 10px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-sidebar a {
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+/* أيقونات التطبيقات الحقيقية */
+.social-sidebar a:nth-child(1) { color: #96bf48; } /* Shopify */
+.social-sidebar a:nth-child(2) { color: #1877f2; } /* Facebook */
+.social-sidebar a:nth-child(3) { color: #69C9D0; } /* TikTok */
+.social-sidebar a:nth-child(4) { color: #e1306c; } /* Instagram */
+
+.social-sidebar a:hover {
+    transform: scale(1.2);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("heroGBG.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.cta {
+    background: linear-gradient(90deg,#7a3cff,#6b1e2e);
+    border: none;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: linear-gradient(90deg,#6b1e2e,#7a3cff);
+    transform: scale(1.05);
+}
+
+/* BRAND INFO RECTANGLE */
+.brand-info {
+    background: linear-gradient(135deg,#0b0b0b,#1f0b1f);
+    padding: 60px 50px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.brand-title {
+    font-size: 32px;
+    background: linear-gradient(90deg,#7a3cff,#6b1e2e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-desc {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 100px 50px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(122,60,255,0.7);
+}
+
+.product-img {
+    height: 180px;
+    background: linear-gradient(135deg,#7a3cff,#6b1e2e);
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #7a3cff;
+    font-size: 18px;
+}
+
+.add-to-cart {
+    background: linear-gradient(90deg,#6b1e2e,#7a3cff);
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(90deg,#7a3cff,#6b1e2e);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background: #050507;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #7a3cff;
+}
+
+/* WHATSAPP FIXED */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 40px;
+    z-index: 999;
+    color: #25d366;
+    transition: 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2);
+}
+.hero {
+    background: url("heroGBG.jpg") center/cover no-repeat;
+}
