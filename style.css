@@ -94,7 +94,6 @@ body {
 }
 
 /* أيقونات التطبيقات الحقيقية */
-.social-sidebar a:nth-child(1) { color: #96bf48; } /* Shopify */
 .social-sidebar a:nth-child(2) { color: #1877f2; } /* Facebook */
 .social-sidebar a:nth-child(3) { color: #69C9D0; } /* TikTok */
 .social-sidebar a:nth-child(4) { color: #e1306c; } /* Instagram */
